@@ -83,7 +83,7 @@ class ContactController extends Controller
         $contact = Contact::find($id);
         Contact::create($request->all());
 
-        return redirect()->route('contacts.index')
+        return redirect()->route('contacts.edit')
             ->with('success', 'Contact updated successfully.');
     }
 
