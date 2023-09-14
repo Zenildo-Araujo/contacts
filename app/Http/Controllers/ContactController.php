@@ -83,7 +83,7 @@ class ContactController extends Controller
         $contact = Contact::find($id);
         Contact::create($request->all());
 
-        return redirect()->url('contact.index')
+        return redirect()->url('contacts.index')
             ->with('success', 'Contact updated successfully.');
     }
 
@@ -95,7 +95,7 @@ class ContactController extends Controller
         $contact = Contact::find($id);
         $contact->delete();
 
-        return redirect()->url('contcontacts.index')
+        return redirect()->url('contacts.index')
             ->with('success', 'Contacts deleted successfully');
     }
 }
