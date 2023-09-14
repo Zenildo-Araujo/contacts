@@ -8,7 +8,6 @@
             <div class="card-header">Dashboard
                 <a class="btn btn-sm btn-success" href={{ URL('/contact/create') }}>Add Contact</a>
                 <a class="btn btn-sm btn-success" href={{ URL('/contacts/show_all') }}>Show All</a>
-                <a class="btn btn-sm btn-success" href={{ URL('/contacts/show_all') }}>Show All</a>
             </div>
             
             <div class="card-body">
